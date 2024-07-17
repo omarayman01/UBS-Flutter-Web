@@ -9,29 +9,31 @@ import 'package:ubs/view/features/our_solutions/view/web_app_development_screen.
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case Routes.homeRoute:
-      return getPageRoute(const HomeScreen());
+      return getPageRoute(const HomeScreen(), settings);
     case Routes.aboutUsRoute:
-      return getPageRoute(const AboutUsScreen());
+      return getPageRoute(const AboutUsScreen(), settings);
     case Routes.talentAcquisitionRoute:
-      return getPageRoute(const TalentAcquisitionScreen());
+      return getPageRoute(const TalentAcquisitionScreen(), settings);
     case Routes.webAppDevelopmentRoute:
-      return getPageRoute(const WebAppDevelopmentScreen());
+      return getPageRoute(const WebAppDevelopmentScreen(), settings);
     case Routes.jobFormRoute:
-      return getPageRoute(const JobFormScreen());
+      return getPageRoute(const JobFormScreen(), settings);
     default:
-      return getPageRoute(const HomeScreen());
+      return getPageRoute(const HomeScreen(), settings);
   }
 }
 
-PageRoute getPageRoute(Widget child) {
+PageRoute getPageRoute(Widget child, RouteSettings settings) {
   // return MaterialPageRoute(builder: (context) => child);
-  return FadeRoute(child: child);
+  return FadeRoute(settings.name!, child);
 }
 
 class FadeRoute extends PageRouteBuilder {
   final Widget child;
-  FadeRoute({required this.child})
+  final String routeName;
+  FadeRoute(this.routeName, this.child)
       : super(
+            settings: RouteSettings(name: routeName),
             pageBuilder: (
               BuildContext context,
               Animation<double> animation,
