@@ -60,12 +60,18 @@ class _SliderWidgetState extends State<SliderWidget> {
           },
           options: CarouselOptions(
             height: screenHeight * 0.7,
+            scrollPhysics: const BouncingScrollPhysics(),
             autoPlay: true,
             autoPlayCurve: Curves.decelerate,
             enableInfiniteScroll: false,
             autoPlayInterval: const Duration(seconds: 9),
             autoPlayAnimationDuration: const Duration(seconds: 4),
             enlargeCenterPage: true,
+            pageSnapping: true,
+            viewportFraction: 0.8,
+            padEnds: true,
+            clipBehavior: Clip.hardEdge,
+            enlargeStrategy: CenterPageEnlargeStrategy.height,
             onPageChanged: (index, reason) =>
                 setState(() => activeIndex = index),
           ),

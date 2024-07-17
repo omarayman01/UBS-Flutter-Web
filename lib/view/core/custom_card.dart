@@ -27,14 +27,29 @@ class CustomCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             ClipRRect(
-              borderRadius: BorderRadius.circular(2),
-              child: Lottie.asset(
-                imgUrl,
-                fit: BoxFit.cover,
-                height: screenHeight * 0.25,
-                width: screenWidth * 0.2,
-              ),
-            ),
+                borderRadius: BorderRadius.circular(2),
+                child: Lottie.asset(
+                  imgUrl,
+                  fit: BoxFit.cover,
+                  height: screenHeight * 0.25,
+                  width: screenWidth * 0.2,
+                  options: LottieOptions(
+                    enableMergePaths: true,
+                    enableApplyingOpacityToLayers: true,
+                  ),
+                  frameRate: FrameRate.composition,
+                  addRepaintBoundary: true,
+                  filterQuality: FilterQuality.none,
+                  backgroundLoading: true,
+                  frameBuilder: (BuildContext context, Widget child,
+                      LottieComposition? composition) {
+                    if (composition == null) {
+                      return const CircularProgressIndicator();
+                    } else {
+                      return child;
+                    }
+                  },
+                )),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(text,

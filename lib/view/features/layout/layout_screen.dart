@@ -1,10 +1,6 @@
 // ignore_for_file: unused_local_variable
 
 import 'package:flutter/material.dart';
-import 'package:ubs/view/constants/routes.dart';
-import 'package:ubs/view_model/locator/locator.dart';
-import 'package:ubs/view_model/services/navigation_service.dart';
-import 'package:ubs/view_model/services/router.dart';
 
 class LayoutScreen extends StatelessWidget {
   const LayoutScreen({super.key, this.screen});
