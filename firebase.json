@@ -1,0 +1,38 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ubs-23a56",
+          "appId": "1:188052832226:android:90151a618e9ba01ffb43bb",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ubs-23a56",
+          "configurations": {
+            "android": "1:188052832226:android:90151a618e9ba01ffb43bb",
+            "ios": "1:188052832226:ios:8ef309575bd9b0b8fb43bb",
+            "web": "1:188052832226:web:4327213e17f3134bfb43bb"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "site": "ubs-23a56-2b9ef",
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

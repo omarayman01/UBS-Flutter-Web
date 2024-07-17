@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "188052832226",
+    "project_id": "ubs-23a56",
+    "storage_bucket": "ubs-23a56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188052832226:android:90151a618e9ba01ffb43bb",
+        "android_client_info": {
+          "package_name": "com.ubs.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYqIaoWPiXoSGbflne2iEyI4ocRqV3ETU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
