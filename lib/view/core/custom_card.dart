@@ -6,7 +6,11 @@ import 'package:ubs/view_model/locator/locator.dart';
 import 'package:ubs/view_model/services/navigation_service.dart';
 
 class CustomCard extends StatelessWidget {
-  const CustomCard({super.key, required this.text, required this.imgUrl});
+  const CustomCard({
+    super.key,
+    required this.text,
+    required this.imgUrl,
+  });
   final String text, imgUrl;
 
   @override
@@ -18,21 +22,21 @@ class CustomCard extends StatelessWidget {
         locator<NavigationService>().navigateTo(Routes.jobFormRoute);
       },
       child: Card(
-        // color: AppTheme.primary,
-        elevation: 10.0,
+        elevation: 20.0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(3.0),
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ClipRRect(
                 borderRadius: BorderRadius.circular(2),
                 child: Lottie.asset(
                   imgUrl,
                   fit: BoxFit.cover,
-                  height: screenHeight * 0.25,
-                  width: screenWidth * 0.2,
+                  height: screenHeight * 0.3,
+                  width: screenWidth * 0.4,
                   options: LottieOptions(
                     enableMergePaths: true,
                     enableApplyingOpacityToLayers: true,

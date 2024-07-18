@@ -4,11 +4,13 @@ import 'package:ubs/view/constants/app_theme.dart';
 import 'package:ubs/view/extentions/hover_extensions.dart';
 
 class NavigationBarItemMenu extends StatefulWidget {
-  const NavigationBarItemMenu({Key? key, this.menu, required this.title})
+  const NavigationBarItemMenu(
+      {Key? key, this.menu, required this.title, required this.pc})
       : super(key: key);
 
   final Widget? menu;
   final String title;
+  final bool pc;
 
   @override
   State<NavigationBarItemMenu> createState() => _NavigationBarItemMenuState();
@@ -27,10 +29,11 @@ class _NavigationBarItemMenuState extends State<NavigationBarItemMenu> {
             showPopover(
               context: context,
               bodyBuilder: (context) => widget.menu!,
-              width: screenWidth * 0.18,
-              height: screenHeight * 0.14,
+              width: widget.pc ? screenWidth * 0.18 : screenWidth * 0.4,
+              height: widget.pc ? screenHeight * 0.14 : screenHeight * 0.125,
               backgroundColor: Colors.grey[300]!,
-              direction: PopoverDirection.bottom,
+              direction:
+                  widget.pc ? PopoverDirection.bottom : PopoverDirection.right,
               // arrowDxOffset: position.dx,
             );
 

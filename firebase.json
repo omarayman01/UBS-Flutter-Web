@@ -21,7 +21,6 @@
     }
   },
   "hosting": {
-    "site": "ubs-23a56-2b9ef",
     "public": "build/web",
     "ignore": [
       "firebase.json",
