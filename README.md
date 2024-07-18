@@ -13,7 +13,4 @@ A Flutter-based website for providing business services. The site employs the MV
 https://github.com/user-attachments/assets/6731bd60-1b28-4739-ac18-4e3fee44b3db
 
 https://github.com/user-attachments/assets/28da372f-0a85-4404-911c-eb8d3471a1ee
-<p float="left">
-  <img src="https://github.com/user-attachments/assets/6731bd60-1b28-4739-ac18-4e3fee44b3db" width="300" />
-  <img src="https://github.com/user-attachments/assets/28da372f-0a85-4404-911c-eb8d3471a1ee" width="300" />
-</p>
+
