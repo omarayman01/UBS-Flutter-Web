@@ -28,11 +28,13 @@ class NavigationBarMobile extends StatelessWidget {
                 color: AppTheme.primary,
               ),
             ),
-            Text('UBS',
-                style: Theme.of(context)
-                    .textTheme
-                    .displayLarge!
-                    .copyWith(fontSize: screenWidth * 0.05)),
+            Image.asset("build/web/assets/assets/logo.png",
+                width: screenWidth * 0.15, height: screenHeight * 0.08),
+            // Text('UBS',
+            //     style: Theme.of(context)
+            //         .textTheme
+            //         .displayLarge!
+            //         .copyWith(fontSize: screenWidth * 0.05)),
           ],
         ),
       ),

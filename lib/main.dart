@@ -50,7 +50,6 @@ class MyApp extends StatelessWidget {
       navigatorKey: locator<NavigationService>().navigatorkey,
       onGenerateRoute: generateRoute,
       initialRoute: Routes.homeRoute,
-      // home: LayoutScreen(),
     );
   }
 }

@@ -27,7 +27,7 @@ class TalentBodyPC extends StatelessWidget {
           pc: true,
           rightPic: false,
           url: "build/web/assets/assets/re2.png",
-          title: 'Local Recruitment',
+          title: 'Talent Acquisitions',
           body: """ At Ultimate Business Solutions, we specialize in:
 Staffing Solutions: Whether you need temporary, contract, or permanent staff, we have a diverse pool of qualified candidates ready to meet your business demands.
 Recruitment Services: Our expert recruiters use cutting-edge technology and industry insights to identify and attract the best talent for your organization.Customized 

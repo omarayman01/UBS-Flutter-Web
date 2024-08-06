@@ -17,11 +17,13 @@ class NavigationHeader extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('UBS',
-              style: Theme.of(context)
-                  .textTheme
-                  .displaySmall!
-                  .copyWith(color: AppTheme.white, fontSize: 25)),
+          Image.asset("build/web/assets/assets/logo.png",
+              width: screenWidth * 0.23, height: screenHeight * 0.13),
+          // Text('UBS',
+          //     style: Theme.of(context)
+          //         .textTheme
+          //         .displaySmall!
+          //         .copyWith(color: AppTheme.white, fontSize: 25)),
           SizedBox(
             height: screenHeight * 0.02,
           ),

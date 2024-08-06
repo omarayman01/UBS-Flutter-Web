@@ -22,11 +22,13 @@ class Footer extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('UBS',
-                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                            color: AppTheme.white,
-                            fontSize: screenWidth * 0.06)),
-                    SizedBox(height: screenHeight * 0.02),
+                    Image.asset("build/web/assets/assets/logo.png",
+                        width: screenWidth * 0.18, height: screenHeight * 0.09),
+                    // Text('UBS',
+                    //     style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                    //         color: AppTheme.white,
+                    //         fontSize: screenWidth * 0.06)),
+                    SizedBox(height: screenHeight * 0.05),
                     SizedBox(
                       width: screenWidth * 0.4,
                       child: Column(
@@ -103,11 +105,13 @@ class Footer extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('UBS',
-                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                            color: AppTheme.white,
-                            fontSize: screenWidth * 0.1)),
-                    SizedBox(height: screenHeight * 0.02),
+                    Image.asset("build/web/assets/assets/logo.png",
+                        width: screenWidth * 0.23, height: screenHeight * 0.13),
+                    // Text('UBS',
+                    //     style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                    //         color: AppTheme.white,
+                    //         fontSize: screenWidth * 0.1)),
+                    // SizedBox(height: screenHeight * 0.01),
                     SizedBox(
                       width: screenWidth * 0.6,
                       child: Column(
@@ -147,6 +151,7 @@ class Footer extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    SizedBox(height: screenHeight * 0.03),
                     Text('Contact',
                         style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                             color: AppTheme.white,
