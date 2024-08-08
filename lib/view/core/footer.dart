@@ -22,7 +22,7 @@ class Footer extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset("build/web/assets/assets/logo.png",
+                    Image.asset("build/web/assets/assets/logo2.png",
                         width: screenWidth * 0.18, height: screenHeight * 0.09),
                     // Text('UBS',
                     //     style: Theme.of(context).textTheme.bodyLarge!.copyWith(
@@ -105,7 +105,7 @@ class Footer extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset("build/web/assets/assets/logo.png",
+                    Image.asset("build/web/assets/assets/logo2.png",
                         width: screenWidth * 0.23, height: screenHeight * 0.13),
                     // Text('UBS',
                     //     style: Theme.of(context).textTheme.bodyLarge!.copyWith(

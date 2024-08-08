@@ -35,7 +35,7 @@ class CustomCard extends StatelessWidget {
                 child: Lottie.asset(
                   imgUrl,
                   fit: BoxFit.cover,
-                  height: screenHeight * 0.3,
+                  height: screenHeight * 0.25,
                   width: screenWidth * 0.4,
                   options: LottieOptions(
                     enableMergePaths: true,
@@ -55,7 +55,7 @@ class CustomCard extends StatelessWidget {
                   },
                 )),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(10.0),
               child: Text(text,
                   style: Theme.of(context)
                       .textTheme
